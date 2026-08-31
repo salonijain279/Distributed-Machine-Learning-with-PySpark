@@ -1,8 +1,8 @@
 # Distributed Machine Learning with PySpark
 
-Four end-to-end Spark ML projects covering classification, regression, feature engineering, evaluation, and cross-validated model selection. Each pipeline is written as a portable `spark-submit` job instead of a course-export notebook.
+I rebuilt four Spark ML coursework exercises as standalone projects covering classification, regression, feature engineering, evaluation, and cross-validated model selection. I converted the original notebook-style work into portable `spark-submit` jobs so the pipelines are easier to inspect and rerun.
 
-## Casebook
+## What I built
 
 | Project | Analytics task | Pipeline |
 |---|---|---|
@@ -13,7 +13,7 @@ Four end-to-end Spark ML projects covering classification, regression, feature e
 
 ## Why Spark ML
 
-Spark ML keeps data preparation and modelling stages in one fitted pipeline, reducing training-serving skew. This repository demonstrates the same pattern across datasets with different target types and feature structures.
+I used Spark ML pipelines to keep data preparation and modelling stages inside the same fitted workflow. Applying that pattern across different target types helped me practice avoiding inconsistent transformations between training and scoring.
 
 ## Run
 
