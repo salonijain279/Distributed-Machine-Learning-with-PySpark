@@ -12,4 +12,3 @@ def test_every_project_reports_an_out_of_sample_metric() -> None:
         text = source.read_text()
         assert "test_" in text, source.name
         assert "randomSplit" in text or "--test" in text, source.name
-
