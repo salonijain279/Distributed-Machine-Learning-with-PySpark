@@ -1,6 +1,6 @@
 # Distributed Machine Learning with PySpark
 
-I rebuilt four Spark ML coursework exercises as standalone projects covering classification, regression, feature engineering, evaluation, and cross-validated model selection. I converted the original notebook-style work into portable `spark-submit` jobs so the pipelines are easier to inspect and rerun.
+This repository contains four portable Spark ML pipelines covering binary and multiclass classification, regression, feature engineering, evaluation, and cross-validated model selection. Each workflow runs as a standalone `spark-submit` job with explicit inputs and out-of-sample evaluation.
 
 ## What I built
 
@@ -11,9 +11,9 @@ I rebuilt four Spark ML coursework exercises as standalone projects covering cla
 | Used-car acceptability | Multiclass classification | String indexing, vector assembly, Decision Tree, accuracy evaluation |
 | Concrete strength | Regression | Age bucketing, scaling, Random Forest regression, RMSE evaluation |
 
-## Why Spark ML
+## Pipeline design
 
-I used Spark ML pipelines to keep data preparation and modelling stages inside the same fitted workflow. Applying that pattern across different target types helped me practice avoiding inconsistent transformations between training and scoring.
+Spark ML pipelines keep data preparation and modelling stages inside the same fitted workflow, reducing the risk of inconsistent transformations between training and scoring. The four implementations apply that pattern across different target types and evaluation metrics.
 
 ## Run
 
@@ -33,7 +33,3 @@ Every command prints an out-of-sample metric and the selected model configuratio
 ## Skills represented
 
 `PySpark` · `Spark MLlib` · `Pipeline` · `StringIndexer` · `OneHotEncoder` · `Imputer` · `VectorAssembler` · `CrossValidator` · `Random Forest` · `Gradient-Boosted Trees`
-
-## Origin
-
-Rebuilt from MSBA Big Data Analytics labs as an original, reusable portfolio casebook. Exam material and instructor solution exports are excluded.
