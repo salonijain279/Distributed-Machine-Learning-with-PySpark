@@ -2,7 +2,7 @@
 
 This repository contains four portable Spark ML pipelines covering binary and multiclass classification, regression, feature engineering, evaluation, and cross-validated model selection. Each workflow runs as a standalone `spark-submit` job with explicit inputs and out-of-sample evaluation.
 
-## What I built
+## Approach
 
 | Project | Analytics task | Pipeline |
 |---|---|---|
