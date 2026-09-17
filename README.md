@@ -13,6 +13,14 @@ This repository contains four portable Spark ML pipelines covering binary and mu
 
 ## Pipeline design
 
+```mermaid
+flowchart LR
+    A[Raw data] --> B[Impute / encode / assemble]
+    B --> C[Fitted Spark ML Pipeline]
+    C --> D[CrossValidator model selection]
+    D --> E[Out-of-sample metric]
+```
+
 Spark ML pipelines keep data preparation and modelling stages inside the same fitted workflow, reducing the risk of inconsistent transformations between training and scoring. The four implementations apply that pattern across different target types and evaluation metrics.
 
 ## Run
