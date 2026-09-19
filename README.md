@@ -1,10 +1,10 @@
-# Distributed Machine Learning with PySpark
+# PySpark ML Pipelines
 
-This repository contains four portable Spark ML pipelines covering binary and multiclass classification, regression, feature engineering, evaluation, and cross-validated model selection. Each workflow runs as a standalone `spark-submit` job with explicit inputs and out-of-sample evaluation.
+Four portable Spark ML pipelines for binary and multiclass classification and regression, each with feature engineering, out-of-sample evaluation, and cross-validated model selection. Every pipeline runs as a standalone `spark-submit` job with explicit inputs, so the same code scales from a laptop to a cluster.
 
-## Approach
+## Pipelines
 
-| Project | Analytics task | Pipeline |
+| Pipeline | Task | Stages |
 |---|---|---|
 | Titanic survival | Binary classification | Missing-value handling, categorical encoding, Random Forest, AUC evaluation |
 | Bike-share demand | Regression | Leakage-safe feature selection, vector indexing, Gradient-Boosted Trees, RMSE tuning |
