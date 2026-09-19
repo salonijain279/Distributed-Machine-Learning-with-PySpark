@@ -1,4 +1,4 @@
-# PySpark ML Pipelines
+# SparkPredict: PySpark ML Pipelines
 
 Four portable Spark ML pipelines for binary and multiclass classification and regression, each with feature engineering, out-of-sample evaluation, and cross-validated model selection. Every pipeline runs as a standalone `spark-submit` job with explicit inputs, so the same code scales from a laptop to a cluster.
 
